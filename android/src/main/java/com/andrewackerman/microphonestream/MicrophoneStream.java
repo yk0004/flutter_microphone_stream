@@ -7,9 +7,9 @@ import android.util.Log;
 
 public class MicrophoneStream {
     private static final String TAG = "MicrophoneStream";
-    private static final int SAMPLE_RATE = 44100;
+    private static final int SAMPLE_RATE = 16000;
     private static final int CHANNELS = 1;
-    private static final int BITS_PER_SAMPLE = 2;
+    private static final int BITS_PER_SAMPLE = 1;
 
     private AudioRecord recorder = null;
     private int bufferSize = 1024;
