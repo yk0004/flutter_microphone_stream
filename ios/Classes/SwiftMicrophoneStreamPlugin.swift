@@ -102,7 +102,7 @@ extension SwiftMicrophoneStreamPlugin : MicrophoneStreamDelegate {
     
     func startListening() {
         MicrophoneController.sharedInstance.delegate = self
-        _ = MicrophoneController.sharedInstance.prepare(sampleRate: 44100)
+        _ = MicrophoneController.sharedInstance.prepare(sampleRate: 16000)
         _ = MicrophoneController.sharedInstance.start()
     }
     
