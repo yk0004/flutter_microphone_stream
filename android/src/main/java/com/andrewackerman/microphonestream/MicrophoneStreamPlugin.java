@@ -4,8 +4,13 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
+
 import android.util.Log;
+
+import java.io.File;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -13,8 +18,6 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
-
-import java.io.File;
 
 /** MicrophoneStreamPlugin */
 public class MicrophoneStreamPlugin implements MethodCallHandler, PluginRegistry.RequestPermissionsResultListener, MicrophoneStreamHandler {
