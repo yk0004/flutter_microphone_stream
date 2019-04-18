@@ -15,7 +15,7 @@ protocol MicrophoneStreamDelegate {
 class MicrophoneController {
     var remoteIOUnit: AudioComponentInstance?
     var delegate: MicrophoneStreamDelegate!
-    var prepared = false
+    // var prepared = false
 
     static var sharedInstance = MicrophoneController()
     private init() {}
@@ -27,7 +27,7 @@ class MicrophoneController {
     func prepare(sampleRate specifiedSampleRate: Int) -> OSStatus {
         var status = noErr
 
-        if prepared { return status }
+        // if prepared { return status }
         
         let session = AVAudioSession.sharedInstance()
         do {
@@ -106,7 +106,7 @@ class MicrophoneController {
 
         status = AudioUnitInitialize(remoteIOUnit!)
 
-        prepared = true
+        // prepared = true
         return status
     }
 
